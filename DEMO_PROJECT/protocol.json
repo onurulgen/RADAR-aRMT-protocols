@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "schemaVersion": "0.0.2",
+  "name": "My Demo Protocol",
+  "healthIssues": ["demo"],
+  "protocols": [
+    {
+      "name": "DEMO_MOOD",
+      "showIntroduction": false,
+      "showInCalendar": true,
+      "order": 1,
+      "questionnaire": {
+        "repository": "https://raw.githubusercontent.com/onurulgen/RADAR-aRMT-protocols/main/questionnaires/",
+        "name": "demo_mood",
+        "avsc": "questionnaire"
+      },
+      "startText": { "en": "Please answer a few quick questions." },
+      "endText": { "en": "Thanks — you’re done." },
+      "warn": { "en": "" },
+      "estimatedCompletionTime": 1,
+      "protocol": {
+        "repeatProtocol": { "unit": "day", "amount": 1 },
+        "repeatQuestionnaire": { "unit": "min", "unitsFromZero": [540] },
+        "reminders": { "unit": "day", "amount": 0, "repeat": 0 },
+        "completionWindow": { "unit": "min", "amount": 60 }
+      }
+    }
+  ]
+}
