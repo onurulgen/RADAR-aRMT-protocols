@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "schemaVersion": "0.0.2",
   "name": "My Demo Protocol",
   "healthIssues": ["demo"],
@@ -15,14 +15,13 @@
         "avsc": "questionnaire"
       },
       "startText": { "en": "Please answer a few quick questions." },
-      "endText": { "en": "Thanks — you’re done." },
+      "endText": { "en": "Thank you!" },
       "warn": { "en": "" },
       "estimatedCompletionTime": 1,
       "protocol": {
         "repeatProtocol": { "unit": "day", "amount": 1 },
         "repeatQuestionnaire": { "unit": "min", "unitsFromZero": [540] },
-        "reminders": { "unit": "day", "amount": 0, "repeat": 0 },
-        "completionWindow": { "unit": "min", "amount": 60 }
+        "reminders": { "unit": "day", "amount": 0, "repeat": 0 }
       }
     }
   ]
